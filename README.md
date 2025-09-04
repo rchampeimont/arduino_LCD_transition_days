@@ -31,6 +31,7 @@ Here are some pictures:
 ## Hardware
 * Arduino Uno R3
 * 2x16 LCD display with 3-color LED backlight (I used this: https://www.adafruit.com/product/399)
+* 10 kohm potentiometer to adjust LCD screen contrast (or you can put the "correct" resistor if you prefer)
 
 ## Schematic
 ![Schematic](LCD_transition_days/LCD_transition_days_circuit_schem.png)
