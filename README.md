@@ -6,7 +6,7 @@ But really you can use the project for any use case where you would want to see 
 ## LCD Rainbow Test
 See LCD_rainbow folder.
 
-This is a small demo of changing the LCD screen backlight colors going through the rainbow.
+This is a small demo of changing the LCD screen backlight colors going through the rainbow. Can be used as a test before deploying the main project.
 
 ## LCD Transition Days
 See LCD_transition_days folder.
@@ -20,9 +20,17 @@ Features:
 * Shows a square in the 2nd line of the LCD showing where we are approximately during the day.
 * The backlight is a color of the rainbow corresponding to the time of day.
 
+Here are some pictures:
+
+675 days - in the morning
+![675 days - in the morning](LCD_transition_days/675_morning.jpg)
+
+676 days - in the evening
+![676 days - in the evening](LCD_transition_days/676_evening.jpg)
+
 ## Hardware
 * Arduino Uno R3
 * 2x16 LCD display with 3-color LED backlight (I used this: https://www.adafruit.com/product/399)
 
 ## Schematic
-![XXX](LCD_transition_days/LCD_transition_days_circuit_schem.png)
+![Schematic](LCD_transition_days/LCD_transition_days_circuit_schem.png)
