@@ -8,7 +8,9 @@ See LCD_rainbow folder.
 
 This is a small demo of changing the LCD screen backlight colors going through the rainbow. Can be used as a test before deploying the main project.
 
-See short on Youtube here: https://www.youtube.com/shorts/id2fOU1pXHc
+![Gif showing the Arduino with the rainbow animation](LCD_rainbow/rainbow_animation.gif)
+
+See also short on Youtube here: https://www.youtube.com/shorts/id2fOU1pXHc
 
 ## LCD Transition Days
 See LCD_transition_days folder.
