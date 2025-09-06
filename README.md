@@ -21,16 +21,13 @@ Features:
 * Shows the number of days since some event (that's the main purpose).
 * Saves in EEPROM the numbers of hours since event, so that if the Arduino is restarted it looses at most 1 hour.
   * The 1 hour resolution is a tradeoff betweem accuracy and EEPROM life which is limited to 100,000 write cycles (cf https://docs.arduino.cc/learn/built-in-libraries/eeprom/). This ensures that the program can run for about 10 years before the EEPROM is burnt.
-* Shows a square in the 2nd line of the LCD showing where we are approximately during the day.
+* Shows a progress bar in the 2nd line of the LCD showing where we are approximately during the day.
 * The backlight is a color of the rainbow corresponding to the time of day.
 
-Here are some pictures:
+Here is a picture:
 
-675 days - in the morning
-![675 days - in the morning](LCD_transition_days/675_morning.jpg)
+![Picture of the project](LCD_transition_days/picture.jpg)
 
-676 days - in the evening
-![676 days - in the evening](LCD_transition_days/676_evening.jpg)
 
 ## Hardware
 * Arduino Uno R3
