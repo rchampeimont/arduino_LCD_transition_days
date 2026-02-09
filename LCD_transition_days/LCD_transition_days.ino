@@ -107,6 +107,9 @@ void loop() {
   unsigned long hoursSinceTransition;
   EEPROM.get(EEPROM_ADDR, hoursSinceTransition);
 
+  // Re-running lcd.begin is a workaround against the LCD screen getting
+  // "corrupted" after a long run time.
+  lcd.begin(LCD_COLS, LCD_ROWS);
   lcd.clear();
   lcd.setCursor(0, 0);
   lcd.print(hoursSinceTransition / 24);
