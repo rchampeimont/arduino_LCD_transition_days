@@ -98,7 +98,7 @@ void setup() {
   lcd.clear();
 
   // Uncomment to manually load/change initial value (days * 24 + hrs)
-  //updateEepromIfNecessary(678* 24 + 21); digitalWrite(LED_BUILTIN, 1);
+  //updateEepromIfNecessary(3686UL * 24 + 21); digitalWrite(LED_BUILTIN, 1);
   // Then comment and upload AGAIN because you don't want to reset the
   // date each time Arduino restarts. Off internal LED indicates that it's good.
 }
@@ -112,12 +112,20 @@ void loop() {
   lcd.begin(LCD_COLS, LCD_ROWS);
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print(hoursSinceTransition / 24);
-  lcd.print(" days ");
+  //lcd.print(hoursSinceTransition / 24);
+  //lcd.print(" days ");
 
-  double yrs = hoursSinceTransition / 24 / 365.25;
+  int yrs = hoursSinceTransition / 24 / 365.25;
   lcd.print(yrs);
-  lcd.print(" yr");
+  lcd.print(" yrs ");
+
+  int months = (hoursSinceTransition - yrs * 365.25 * 24) / 24 / 30.44;
+  lcd.print(months);
+  lcd.print(" m ");
+
+  int days = (hoursSinceTransition - yrs * 365.25 * 24 - months * 30.44 * 24) / 24;
+  lcd.print(days);
+  lcd.print(" d");
 
   lcd.setCursor(0, 1);
   int coloredCell = ((hoursSinceTransition % 24) * 16) / 24;
