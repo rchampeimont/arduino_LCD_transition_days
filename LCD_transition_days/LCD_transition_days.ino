@@ -98,7 +98,7 @@ void setup() {
   lcd.clear();
 
   // Uncomment to manually load/change initial value (days * 24 + hrs)
-  //updateEepromIfNecessary(3686UL * 24 + 21); digitalWrite(LED_BUILTIN, 1);
+  //updateEepromIfNecessary(3686UL * 24 + 0); digitalWrite(LED_BUILTIN, 1);
   // Then comment and upload AGAIN because you don't want to reset the
   // date each time Arduino restarts. Off internal LED indicates that it's good.
 }
